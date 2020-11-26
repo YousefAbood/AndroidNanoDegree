@@ -7,8 +7,8 @@
     tools:context=".MainActivity">
 
 
-a    <ImageView
-        android:src="@drawable/sunsetViewHappyBday"
+    <ImageView
+        android:src="@drawable/sunsetviewhappybday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
@@ -42,15 +42,19 @@ a    <ImageView
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:src="@drawable/celebration"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:contentDescription="sunrise"/>
+
 
 
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/celebration"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="sunrise"/>
 
 </RelativeLayout>
 
