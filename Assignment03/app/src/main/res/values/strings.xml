@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">interactiveapp</string>
+    <string name="hello">hEllo</string>
+    <string name="logo">logo</string>
+    <string name="todo">TODO</string>
+    <string name="description_we_are_an_artificial_intelligence_company_where_we_design_applications_that_help_people_with_their_daily_lives_welcome_to_our_application">Description, We are an Artificial Intelligence Company, where we design applications that help people with their daily lives, Welcome to our application!</string>
+    <string name="code_image">code image</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat_duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur_excepteur_sint_occaecat_cupidatat_non_proident_sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="email_support_artiex_com_nr_31_1234567890">Email, support@artiex.com, Nr. +31 1234567890</string>
+</resources>
