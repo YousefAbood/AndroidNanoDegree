@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stadium"
+        android:contentDescription="background"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:src="@drawable/juventuss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="juventusLogo"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="vs"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center" />
+
+            <ImageView
+                android:src="@drawable/ferencvarosilogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="ferencvarosi"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/borderscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"
+                android:onClick="incrementJuventus"
+                android:textColor="@android:color/black"
+                app:backgroundTint="#8BE9D6ED" />
+
+            <TextView
+                android:id="@+id/juventusScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Score"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/ferencvarosiScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="10sp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/black"
+                android:onClick="incrementFerencvaros"
+                app:backgroundTint="#8BE9D6ED" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
