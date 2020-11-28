@@ -2,15 +2,14 @@ package com.example.android.java;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
     
-    int number, price;
+    int quantity, price;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +17,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     
-    
-    public void submitOrder(View view) {
-        number++;
+    public void increment(View view){
+        quantity++;
         price += 10;
-        display(number, price);
+        display(quantity, price);
+    }
+
+    public void decrement(View view){
+        if(!(quantity <= 0)) {
+            quantity--;
+            price -= 10;
+            display(quantity, price);
+        }
+    }
+
+    public void submitOrder(View view) {
+        TextView readyOrder = (TextView) findViewById(R.id.readyorder);
+        readyOrder.setText("Your order of " + quantity + " shirt(s) is " + price + "$");
+        readyOrder.setTextColor(Color.YELLOW);
+        readyOrder.setVisibility(TextView.VISIBLE);
     }
 
     private void display(int quantity, int price) {
@@ -31,4 +44,5 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText("" + quantity);
         priceTextView.setText(""  + price + "$");
     }
+
 }
