@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
         android:src="@drawable/stadium"
-        android:contentDescription="background"
+        android:contentDescription="@string/background"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
@@ -35,12 +35,12 @@
                 android:src="@drawable/juventuss"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="juventusLogo"/>
+                android:contentDescription="@string/juventuslogo"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="vs"
+                android:text="@string/vs"
                 android:textColor="@color/white"
                 android:textSize="45sp"
                 android:fontFamily="sans-serif"
@@ -52,7 +52,7 @@
                 android:src="@drawable/ferencvarosilogo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="ferencvarosi"/>
+                android:contentDescription="@string/ferencvarosi"/>
 
         </LinearLayout>
 
@@ -67,8 +67,8 @@
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:gravity="center"
-                android:text="+"
-                android:textSize="10sp"
+                android:text="@string/incrementFirst"
+                android:textSize="12sp"
                 android:layout_marginLeft="20dp"
                 android:onClick="incrementJuventus"
                 android:textColor="@android:color/black"
@@ -82,7 +82,7 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:text="0"
+                android:text="@string/juventusZero"
                 android:textColor="@color/white" />
 
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginRight="30dp"
-                android:text="Score"
+                android:text="@string/score"
                 android:textColor="@color/white" />
 
             <TextView
@@ -103,15 +103,15 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginRight="15dp"
-                android:text="0"
+                android:text="@string/_0"
                 android:textColor="@color/white" />
 
             <Button
                 android:layout_width="38dp"
                 android:layout_height="38dp"
                 android:gravity="center"
-                android:text="+"
-                android:textSize="10sp"
+                android:text="@string/incrementFsfs"
+                android:textSize="12sp"
                 android:layout_marginRight="20dp"
                 android:textColor="@android:color/black"
                 android:onClick="incrementFerencvaros"

@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SoccerGame</string>
+    <string name="background">background</string>
+    <string name="juventuslogo">juventusLogo</string>
+    <string name="vs">vs</string>
+    <string name="ferencvarosi">ferencvarosi</string>
+    <string name="incrementFirst">+</string>
+    <string name="juventusZero">0</string>
+    <string name="score">Score</string>
+    <string name="_0">0</string>
+    <string name="incrementFsfs">+</string>
 </resources>
