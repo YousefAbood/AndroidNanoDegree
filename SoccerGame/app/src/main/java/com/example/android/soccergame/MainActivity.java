@@ -16,16 +16,27 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     
+    public void setValues(){
+        TextView juventusScore = findViewById(R.id.juventusScore);
+        juventusScore.setText("" + juventusScoreNumber);
+        TextView ferencvarosiScore = findViewById(R.id.ferencvarosiScore);
+        ferencvarosiScore.setText("" + ferencvarosScoreNumber);
+    }
+
     public void incrementJuventus(View view) {
         juventusScoreNumber++;
-        TextView juventusScore = (TextView) findViewById(R.id.juventusScore);
-        juventusScore.setText("" + juventusScoreNumber);
+        setValues();
     }
 
     public void incrementFerencvaros(View view){
         ferencvarosScoreNumber++;
-        TextView ferencvarosiScore = (TextView) findViewById(R.id.ferencvarosiScore);
-        ferencvarosiScore.setText("" + ferencvarosScoreNumber);
+        setValues();
+    }
+
+    public void resetScore(View view) {
+        juventusScoreNumber = 0;
+        ferencvarosScoreNumber = 0;
+        setValues();
     }
 
 }
