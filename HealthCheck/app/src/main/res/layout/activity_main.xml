@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/japanesehospital"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/container"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:text="@string/healthcheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A9972727"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Do you have health problems?"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="You have major health issues, Consult a doctor!"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"/>
+
+
+</RelativeLayout>
