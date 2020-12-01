@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,9 +7,10 @@
 
     <ImageView
         android:src="@drawable/japanesehospital"
+        android:contentDescription="@string/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop" />
 
 
     <LinearLayout
@@ -40,105 +40,119 @@
             android:layout_height="wrap_content" >
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/did_you_go_to_the_hospital_the_past_1_year"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_have_heart_issues"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_drink_alcohol"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_smoke"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_do_sport_more_than_1_time_per_week"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_sit_more_than_4_hours_on_your_computer_phone"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/did_you_serve_in_the_army"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <CheckBox
+                android:onClick="checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#A9972727"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
                 android:layout_marginTop="10dp"
-                android:text="Do you have health problems?"
+                android:text="@string/do_you_have_any_type_of_disorders"
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/problemSpecify"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:text="You have major health issues, Consult a doctor!"/>
+                android:layout_margin="7dp"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text=""/>
 
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
+        android:onClick="healthcheck"
+        android:text="@string/click_here_to_check_your_health"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

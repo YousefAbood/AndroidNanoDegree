@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">HealthCheck</string>
     <string name="healthcheck">Health Check</string>
+    <string name="did_you_go_to_the_hospital_the_past_1_year">Did you go to the hospital the past 1 year?</string>
+    <string name="do_you_have_heart_issues">Do you have heart issues?</string>
+    <string name="do_you_drink_alcohol">Do you drink alcohol?</string>
+    <string name="do_you_smoke">Do you smoke?</string>
+    <string name="do_you_do_sport_more_than_1_time_per_week">Do you do sport more than 1 time per week?</string>
+    <string name="do_you_sit_more_than_4_hours_on_your_computer_phone">Do you sit more than 4 hours on your computer/phone?</string>
+    <string name="did_you_serve_in_the_army">Did you serve in the army?</string>
+    <string name="do_you_have_any_type_of_disorders">Do you have any type of disorders?</string>
+    <string name="click_here_to_check_your_health">Click here to Check your Health</string>
+    <string name="background">background</string>
 </resources>
