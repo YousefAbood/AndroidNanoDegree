@@ -7,7 +7,24 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_song_two">songTwo</string>
+    <string name="song1">song1</string>
+    <string name="song2">song1</string>
+    <string name="song3">song1</string>
+    <string name="holst_the_planets_op_32_ii_venus_the_bringer_of_peace">Holst: The Planets OP.32: II. Venus, The Bringer of Peace</string>
+    <string name="the_planets_op_32_vii_neptune_the_mystic">The Planets, Op.32: VII. Neptune, The Mystic</string>
+    <string name="adagio_for_strings_english_string_orchestra">Adagio For Strings, English String Orchestra</string>
+    <string name="smooth_criminal_nmr_digital">Smooth Criminal, NMR Digital, The Relaxation Company</string>
+    <string name="alice_in_wonderland_alice_s_evidence">Alice in Wonderland: Alice\'s Evidence</string>
+    <string name="symphony_no_5_in_b_flat_major_andante">Symphony No.5 in B Flat Major, Andante</string>
+    <string name="violin_concerto_in_e_minor_op_64_andante">Violin Concerto in E Minor, Op.64: Andante</string>
+    <string name="lady_radnor_s_suite_slow_minuet">Lady Radnor\'s Suite, Slow Minuet</string>
+    <string name="suite_for_string_orchestra_nocturne">Suite For String Orchestra, Nocturne</string>
+    <string name="sonata_no_2_in_b_flat_minor_funeral_march_op_35_iii_marche_funebre_lento_1991_remastered">Sonata No.2 in B-Flat Minor (Funeral March), OP.35: III. Marche funebre: Lento (1991 Remastered)</string>
+    <string name="calm_sea_and_propsperous_voyage_op_27">Calm Sea and Propsperous Voyage, Op. 27</string>
+    <string name="gustav_holst_philharmonia_orchestra_sir_simon_rattle">Gustav Holst, Philharmonia Orchestra, Sir Simon Rattle</string>
+    <string name="mayfair_philharmonic_orchestra_nimbus_records">Mayfair Philharmonic Orchestra, Nimbus Records</string>
+    <string name="the_relaxation_company">The Relaxation Company</string>
+    <string name="sir_john_gielgud_nimbus_records">Sir John Gielgud, Nimbus Records</string>
+    <string name="the_hanover_band_the_relaxation_company">The Hanover Band, The Relaxation Company</string>
+    <string name="sb">Samuel Barber, The Relaxation Company</string>
 </resources>
