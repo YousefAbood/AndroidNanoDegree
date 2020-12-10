@@ -1,25 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <ImageView
+        android:src="@drawable/spotifybackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/background"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fillViewport="false"
+        tools:ignore="MissingConstraints">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="84dp">
 
-    <Button
-        android:onClick="goNextPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/song1"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/holst_the_planets_op_32_ii_venus_the_bringer_of_peace"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:onClick="firstTrack"
+            tools:layout_editor_absoluteX="1dp" />
 
+        <TextView
+            android:id="@+id/song2"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/the_planets_op_32_vii_neptune_the_mystic"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="secondTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song3"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/adagio_for_strings_english_string_orchestra"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="thirdTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song4"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/smooth_criminal_nmr_digital"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="fourthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song5"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/alice_in_wonderland_alice_s_evidence"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="fifthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song6"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/symphony_no_5_in_b_flat_major_andante"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="sixthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song7"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/violin_concerto_in_e_minor_op_64_andante"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="seventhTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song8"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/lady_radnor_s_suite_slow_minuet"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="eighthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song9"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/suite_for_string_orchestra_nocturne"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="ninthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song10"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/sonata_no_2_in_b_flat_minor_funeral_march_op_35_iii_marche_funebre_lento_1991_remastered"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="tenthTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/song11"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/calm_sea_and_propsperous_voyage_op_27"
+            android:gravity="center_vertical"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:scrollHorizontally="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:onClick="eleventhTrack"
+            tools:layout_editor_absoluteX="1dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
